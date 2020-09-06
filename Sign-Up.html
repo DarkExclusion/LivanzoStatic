@@ -62,16 +62,188 @@
       </div></header> 
     <section class="u-clearfix u-palette-5-dark-1 u-section-1" id="sec-f989">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-group u-group-1">
+        <div class="u-container-style u-expanded-width u-group u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
             <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-1">get in touch</h2>
             <p class="u-align-center u-text u-text-2">Hello !<br>To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !!
             </p>
           </div>
         </div>
-        <div class="u-clearfix u-custom-html u-custom-html-1">
-          <style></style>
-          <p>still under construction</p>
+        <div class="u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+          <style> [type="radio"]:checked,[type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label
+  {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+      color: #fff;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      background: #fff;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #F87DA9;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(2);
+      transform: scale(2);
+  }
+      .checkmark{
+        margin-right:15px;
+      }
+      form {
+        background-color: inherit;
+        display: inline-block;
+        text-align: left;
+        width : 100%;
+      }
+      /* Hide the browser's default radio button */
+      #radios input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      #radios{
+        margin-top : 30px;
+      }
+      .io_be{
+        color: black;
+  	    background-color:white;
+        display: inline-block;
+        text-align: left;
+        width :100%;
+        border:0px;
+        border-bottom: 2px solid #720017;
+        padding : 15px;
+        margin-bottom: 20px;
+        margin-top:10px;
+        transition: all 1s ease;
+        box-shadow: 5px 5px 10px rgba(0,0,0, 0.15);
+        border-radius:25px;
+      }
+      .io_be:valid{
+        box-shadow: none;
+        border-bottom: 2px solid #7CFC00;
+      }
+		.io_be:focus{
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+        -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+        outline: none !important;
+      }
+      .headLabels{
+        color:#ffffff;
+        /* margin:20px; */
+        margin-bottom:5px;
+        font-size: 13px;
+      }
+      #sumbit_button{
+        display: inline-block;
+        margin: 10px;
+        width: 250px;
+        height: 45px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        outline: none;
+      }
+  	#sumbit_button:hover {
+  		background-color: #de597a;
+  		box-shadow: 0px 15px 20px rgba(222, 89, 122, 0.4);
+  		color: #fff;
+  		transform: translateY(-5px);
+  	}
+  	.radioLabel{
+  		font-size: 16px;
+  		font-weight: 500;
+  	}
+  	#radioHeadLabel{
+  		color:white;
+  		margin-top:25px;
+  		margin-bottom:10px;
+  		font-size: 1vw;
+  	}
+    .radio_container{
+      margin: 15px;
+      margin-left:0px;
+    } </style>
+          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST">
+            <label for="name" class="headLabels"> Name <input class="io_be" type="text" id="name" name="entry.2005620554" placeholder="Name" required="">
+              <br>
+            </label>
+            <br>
+            <label for="phone" class="headLabels"> Phone<br>
+              <input style="margin-bottom:40px" class="io_be" type="tel" id="phone" name="entry.1166974658" placeholder="Phone Number" pattern="[0-9]+" minlength="8" maxlength="14" oninvalid="setCustomValidity('Please enter a valid Phone Number')" onkeyup="try{setCustomValidity('')}catch(e){}" required="">
+            </label>
+            <br>
+            <label id="radioHeadLabel">From where did you get to know about us?</label>
+            <br>
+            <div id="radios">
+              <div class="radio_container">
+                <input type="radio" id="radio_1" class="radioSingleElement" name="entry.1868474099" value="Social Media / Internet" required="">
+                <label for="radio_1" class="radioLabel">
+                  <span class="checkmark"></span> Social Media / Internet 
+                </label>
+              </div>
+              <br>
+              <div class="radio_container">
+                <input type="radio" id="radio_2" class="radioSingleElement" name="entry.1868474099" value="Independent Business Influencer (IBI)">
+                <label for="radio_2" class="radioLabel">
+                  <span class="checkmark"></span> Independent Business Influencer (IBI) 
+                </label>
+              </div>
+              <br>
+              <div class="radio_container">
+                <input type="radio" id="radio_3" class="radioSingleElement" name="entry.1868474099" value="Our existing clients (Refer and Earn)">
+                <label for="radio_3" class="radioLabel">
+                  <span class="checkmark"></span> Our existing clients (Refer and Earn) 
+                </label>
+              </div>
+              <br>
+            </div>
+            <div style="width:100% ; text-align:center;">
+              <input type="submit" id="sumbit_button" value="Sign Up!">
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
         </div>
       </div>
     </section>
