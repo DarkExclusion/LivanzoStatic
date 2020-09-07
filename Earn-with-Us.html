@@ -431,7 +431,10 @@ from your comfort !! </h1>
   		color: #fff;
   		transform: translateY(-5px);
     } </style>
-          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSfCTVAZS37WJwv3kYFOGf__7PjVJY4hKp8xnrmbBTa5GoYZLw/formResponse" method="POST">
+	  <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='ThankYou.html';}"></iframe>
+          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSfCTVAZS37WJwv3kYFOGf__7PjVJY4hKp8xnrmbBTa5GoYZLw/formResponse" method="POST" target="hidden_iframe"
+    onsubmit="submitted=true;">
             <label for="name" class="headLabels"> Name * <input class="io_be" type="text" id="name" name="entry.2005620554" placeholder="Name" required="">
               <br>
             </label>

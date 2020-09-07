@@ -205,7 +205,10 @@
       margin: 15px;
       margin-left:0px;
     } </style>
-          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST">
+	  <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='ThankYou.html';}"></iframe>
+          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST" target="hidden_iframe"
+       onsubmit="submitted=true;">
             <label for="name" class="headLabels"> Name <input class="io_be" type="text" id="name" name="entry.2005620554" placeholder="Name" required="">
               <br>
             </label>

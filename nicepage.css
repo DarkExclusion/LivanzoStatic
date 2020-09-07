@@ -30838,13 +30838,13 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 1199px){ .u-header .u-image-1 {margin-left: 0}
 .u-header .u-menu-1 {width: auto; margin-top: -47px; margin-right: 0} }
 @media (max-width: 991px){ .u-header .u-sheet-1 {min-height: 101px}
-.u-header .u-image-1 {width: auto; margin-left: -50px; height: 32px}
+.u-header .u-image-1 {margin-left: -50px}
 .u-header .u-menu-1 {margin-top: -44px; margin-bottom: 31px} }
 @media (max-width: 767px){ .u-header .u-sheet-1 {min-height: 103px}
-.u-header .u-image-1 {width: 327px; margin-top: 22px; margin-left: auto}
+.u-header .u-image-1 {width: 327px; margin-top: 22px; margin-left: auto; height: 32px}
 .u-header .u-menu-1 {margin-top: -46px} }
 @media (max-width: 575px){ .u-header .u-sheet-1 {min-height: 108px}
-.u-header .u-image-1 {margin-top: 26px; width: auto}
+.u-header .u-image-1 {margin-top: 26px; width: 327px}
 .u-header .u-logo-image-1 {max-width: 243px; max-height: 243px}
 .u-header .u-menu-1 {margin: -40px auto 42px 327px} }
  .u-footer .u-sheet-1 {min-height: 569px}
