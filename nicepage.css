@@ -30635,6 +30635,9 @@ a.u-link.u-text-hover-grey-90:hover {
     {
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
     }
     .u-btn
     {
@@ -30744,6 +30747,13 @@ a.u-link.u-text-hover-grey-90:hover {
     /** cms-rules **/
 
     /** color-rules **/
+    .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p:not(.u-text-variant),
+    .u-gradient > .u-container-layout > p:not(.u-text-variant),
+    .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
+    p:not(.u-text-variant)
+    {
+        color: #ffffff;
+    }
     .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
     .u-gradient > .u-container-layout > a,
     .u-image:not(.u-shading) > .u-container-layout > a,
@@ -30800,6 +30810,10 @@ a.u-link.u-text-hover-grey-90:hover {
     /** color-rules **/
 
     /** alt-color-rules **/
+    .u-shading p:not(.u-text-variant),.u-overlap-contrast .u-header p:not(.u-text-variant):not(.u-nav-link):not(.u-btn)
+    {
+        color: #111111;
+    }
     .u-custom-color-1 a,.u-custom-color-2 a,.u-custom-color-3 a,.u-custom-color-4 a,.u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-base a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-3 a,.u-palette-3-light-1 a,.u-palette-4-base a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-4 a,.u-palette-4-light-1 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
     {
         color: #dad9dd;
@@ -30845,7 +30859,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-image-1 {width: 327px; margin-top: 22px; margin-left: auto; height: 32px}
 .u-header .u-menu-1 {margin-top: -46px} }
 @media (max-width: 575px){ .u-header .u-sheet-1 {min-height: 85px}
-.u-header .u-image-1 {margin-top: 20px; margin-left: -45px; width: 327px}
+.u-header .u-image-1 {margin-top: 20px; margin-left: -45px; width: auto}
 .u-header .u-logo-image-1 {max-width: 243px; max-height: 243px}
 .u-header .u-menu-1 {margin: -38px auto 27px 327px} }
  .u-footer .u-sheet-1 {min-height: 569px}
