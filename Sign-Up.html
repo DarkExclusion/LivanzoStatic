@@ -60,12 +60,12 @@
           </div>
         </nav>
       </div></header> 
-    <section class="u-clearfix u-palette-5-dark-1 u-section-1" id="sec-f989">
+    <section class="u-clearfix u-palette-2-light-2 u-section-1" id="sec-f989">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width u-group u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
-            <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-1">get in touch</h2>
-            <p class="u-align-center u-text u-text-2">Hello !<br>To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !!
+            <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-palette-2-base u-text-1">get in touch</h2>
+            <p class="u-align-center u-text u-text-body-alt-color u-text-2">Hello !<br>To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !!
             </p>
           </div>
         </div>
@@ -205,6 +205,18 @@
       margin: 15px;
       margin-left:0px;
     } </style>
+          <script type="text/javascript"> function ShowCodeSpace(){
+    var inp = document.getElementById("ibi_code");
+    var container = inp.parentNode;
+    container.style["display"]="initial";
+    inp.required = true;
+  }
+  function HideCodeSpace(){
+    var inp = document.getElementById("ibi_code");
+    var container = inp.parentNode;
+    container.style["display"]="none";
+    inp.required = false;
+  } </script>
           <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST">
             <label for="name" class="headLabels"> Name <input class="io_be" type="text" id="name" name="entry.2005620554" placeholder="Name" required="">
               <br>
@@ -218,31 +230,33 @@
             <br>
             <div id="radios">
               <div class="radio_container">
-                <input type="radio" id="radio_1" class="radioSingleElement" name="entry.1868474099" value="Social Media / Internet" required="">
+                <input type="radio" id="radio_1" class="radioSingleElement" name="entry.1868474099" value="Social Media / Internet" onclick="HideCodeSpace()" required="">
                 <label for="radio_1" class="radioLabel">
                   <span class="checkmark"></span> Social Media / Internet 
                 </label>
               </div>
               <br>
               <div class="radio_container">
-                <input type="radio" id="radio_2" class="radioSingleElement" name="entry.1868474099" value="Independent Business Influencer (IBI)">
+                <input type="radio" id="radio_2" class="radioSingleElement" name="entry.1868474099" value="Independent Business Influencer (IBI)" onclick="ShowCodeSpace()">
                 <label for="radio_2" class="radioLabel">
                   <span class="checkmark"></span> Independent Business Influencer (IBI) 
                 </label>
               </div>
               <br>
               <div class="radio_container">
-                <input type="radio" id="radio_3" class="radioSingleElement" name="entry.1868474099" value="Our existing clients (Refer and Earn)">
+                <input type="radio" id="radio_3" class="radioSingleElement" name="entry.1868474099" value="Our existing clients (Refer and Earn)" onclick="HideCodeSpace()">
                 <label for="radio_3" class="radioLabel">
                   <span class="checkmark"></span> Our existing clients (Refer and Earn) 
                 </label>
               </div>
               <br>
             </div>
+            <br>
+            <label for="ibi_code" class="headLabels" style="display:none;"> IBI code <input class="io_be" id="ibi_code" type="text" name="entry.2114964831" placeholder="IBI code given by your IBI">
+            </label>
             <div style="width:100% ; text-align:center;">
               <input type="submit" id="sumbit_button" value="Enquire !">
             </div>
-            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>
@@ -321,7 +335,7 @@
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-top-xl u-container-layout-8">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-8">
                   <div class="u-container-style u-expanded-width u-group u-group-3">
                     <div class="u-container-layout u-container-layout-9">
                       <h4 class="u-align-center u-text u-text-default u-text-6">Links</h4>
