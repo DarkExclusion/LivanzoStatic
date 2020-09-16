@@ -15,7 +15,6 @@
     
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -64,8 +63,8 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width u-group u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
-            <h2 class="u-align-center u-custom-font u-font-oswald u-text u-text-palette-2-base u-text-1">get in touch</h2>
-            <p class="u-align-center u-text u-text-body-alt-color u-text-2">Hello !<br>To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !!
+            <h1 class="u-align-center u-text u-text-palette-2-base u-text-1">get in touch</h1>
+            <p class="u-align-center u-text u-text-body-alt-color u-text-2">Hello, To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !
             </p>
           </div>
         </div>
@@ -156,7 +155,7 @@
         box-shadow: none;
         border-bottom: 2px solid #7CFC00;
       }
-		.io_be:focus{
+      .io_be:focus{
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
         -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
         outline: none !important;
@@ -215,6 +214,20 @@
     var inp = document.getElementById("ibi_code");
     var container = inp.parentNode;
     container.style["display"]="none";
+    inp.value="";
+    inp.required = false;
+  }
+  function ShowCustomerCodeSpace(){
+    var inp = document.getElementById("cus_code");
+    var container = inp.parentNode;
+    container.style["display"]="initial";
+    inp.required = true;
+  }
+  function HideCustomerCodeSpace(){
+    var inp = document.getElementById("cus_code");
+    var container = inp.parentNode;
+    container.style["display"]="none";
+    inp.value="";
     inp.required = false;
   } </script>
           <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST">
@@ -230,21 +243,21 @@
             <br>
             <div id="radios">
               <div class="radio_container">
-                <input type="radio" id="radio_1" class="radioSingleElement" name="entry.1868474099" value="Social Media / Internet" onclick="HideCodeSpace()" required="">
+                <input type="radio" id="radio_1" class="radioSingleElement" name="entry.1868474099" value="Social Media / Internet" onclick="HideCodeSpace();HideCustomerCodeSpace()" required="">
                 <label for="radio_1" class="radioLabel">
                   <span class="checkmark"></span> Social Media / Internet 
                 </label>
               </div>
               <br>
               <div class="radio_container">
-                <input type="radio" id="radio_2" class="radioSingleElement" name="entry.1868474099" value="Independent Business Influencer (IBI)" onclick="ShowCodeSpace()">
+                <input type="radio" id="radio_2" class="radioSingleElement" name="entry.1868474099" value="Independent Business Influencer (IBI)" onclick="ShowCodeSpace();HideCustomerCodeSpace()">
                 <label for="radio_2" class="radioLabel">
                   <span class="checkmark"></span> Independent Business Influencer (IBI) 
                 </label>
               </div>
               <br>
               <div class="radio_container">
-                <input type="radio" id="radio_3" class="radioSingleElement" name="entry.1868474099" value="Our existing clients (Refer and Earn)" onclick="HideCodeSpace()">
+                <input type="radio" id="radio_3" class="radioSingleElement" name="entry.1868474099" value="Our existing clients (Refer and Earn)" onclick="HideCodeSpace();ShowCustomerCodeSpace()">
                 <label for="radio_3" class="radioLabel">
                   <span class="checkmark"></span> Our existing clients (Refer and Earn) 
                 </label>
@@ -252,7 +265,9 @@
               <br>
             </div>
             <br>
-            <label for="ibi_code" class="headLabels" style="display:none;"> IBI code <input class="io_be" id="ibi_code" type="text" name="entry.2114964831" placeholder="IBI code given by your IBI">
+            <label for="ibi_code" class="headLabels" style="display:none;"> IBI code <input class="io_be" id="ibi_code" type="text" name="entry.2114964831" placeholder="IBI code given by your IBI" pattern="\d{5}">
+            </label>
+            <label for="cus_code" class="headLabels" style="display:none;"> Customer referral code <input class="io_be" id="cus_code" type="text" name="entry.1534758393" placeholder="Referral Code">
             </label>
             <div style="width:100% ; text-align:center;">
               <input type="submit" id="sumbit_button" value="Enquire !">
