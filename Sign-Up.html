@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html style="font-size: 16px;" lang="en-IN">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="Sign-Up.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 2.24.4, nicepage.com">
+    <meta name="generator" content="Nicepage 2.25.0, nicepage.com">
+    <link rel="icon" href="images/favicon1.png">
     
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -62,7 +63,7 @@
     <section class="u-clearfix u-palette-2-light-2 u-section-1" id="sec-f989">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width u-group u-group-1">
-          <div class="u-container-layout u-valign-top u-container-layout-1">
+          <div class="u-container-layout u-valign-top-xl u-container-layout-1">
             <h1 class="u-align-center u-text u-text-palette-2-base u-text-1">get in touch</h1>
             <p class="u-align-center u-text u-text-body-alt-color u-text-2">Hello, To get free catalogue and pricing for our service, feel free to fill this form. <br>Let's get to know each other better !
             </p>
@@ -230,7 +231,9 @@
     inp.value="";
     inp.required = false;
   } </script>
-          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST">
+<script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='ThankYou.html';}"></iframe>
+          <form id="main_form_container" action="https://docs.google.com/forms/d/e/1FAIpQLSflBeYUY8zamhXsphJ5R11EamcFvv75c5AD4rcdMKXBKjbuPA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             <label for="name" class="headLabels"> Name <input class="io_be" type="text" id="name" name="entry.2005620554" placeholder="Name" required="">
               <br>
             </label>
@@ -272,6 +275,7 @@
             <div style="width:100% ; text-align:center;">
               <input type="submit" id="sumbit_button" value="Enquire !">
             </div>
+            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>
